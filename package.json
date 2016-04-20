@@ -1,0 +1,49 @@
+{
+  "name": "the-mill-test",
+  "version": "0.0.0",
+  "description": "A test for the mill",
+  "scripts": {
+    "start": "grunt server",
+    "ghpages": "grunt ghpages"
+  },
+  "homepage": "http://github.com/radiodario/the-mill-test",
+  "bugs": "http://github.com/radiodario/the-mill-test/issues",
+  "author": {
+    "name": "Darío Villanueva",
+    "email": "dario@alolo.co",
+    "url": "https://github.com/radiodario"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/radiodario/the-mill-test.git"
+  },
+  "devDependencies": {
+    "babelify": "*",
+    "debowerify": "*",
+    "grunt": "*",
+    "grunt-browserify": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-less": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-ejs": "*",
+    "grunt-gh-pages": "*",
+    "matchdep": "*"
+  },
+  "dependencies": {
+    "debowerify": "^1.4.1",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ejs": "^0.3.0",
+    "grunt-gh-pages": "^1.1.0",
+    "matchdep": "^1.0.1"
+  }
+}
