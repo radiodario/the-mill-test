@@ -24221,6 +24221,21 @@ exports.default = _react2.default.createClass({
     }
   },
   areAllValid: function areAllValid() {
+    var advertiser = this.state.advertiser;
+    if (!advertiser) {
+      this.setState({ advertiserError: true });
+    }
+
+    var brand = this.state.brand;
+    if (!brand) {
+      this.setState({ brandError: true });
+    }
+
+    var product = this.state.product;
+    if (!product) {
+      this.setState({ productError: true });
+    }
+
     var advertiserValid = !this.state.advertiserError && this.state.advertiser.length;
     var brandValid = !this.state.brandError && this.state.brand.length;
     var productValid = !this.state.productError && this.state.brand.length;
@@ -24239,9 +24254,9 @@ exports.default = _react2.default.createClass({
     _AdvertiserActions2.default.add(advertiser, brand, product);
   },
   render: function render() {
-    var advertiserValid = !this.state.hasOwnProperty('advertiserError') || !this.state.advertiserError;
-    var brandValid = !this.state.hasOwnProperty('brandError') || !this.state.brandError;
-    var productValid = !this.state.hasOwnProperty('productError') || !this.state.productError;
+    var advertiserValid = !this.state.advertiserError;
+    var brandValid = !this.state.brandError;
+    var productValid = !this.state.productError;
 
     return _react2.default.createElement(
       'form',

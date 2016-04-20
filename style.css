@@ -16,6 +16,7 @@ label {
 }
 .input--error {
   color: red;
+  border: 1px red;
 }
 pre {
   font-family: 'Inconsolata', monospace;
