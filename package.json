@@ -4,7 +4,8 @@
   "description": "A test for the mill",
   "scripts": {
     "start": "grunt server",
-    "ghpages": "grunt ghpages"
+    "ghpages": "grunt ghpages",
+    "test": "jest"
   },
   "homepage": "http://github.com/radiodario/the-mill-test",
   "bugs": "http://github.com/radiodario/the-mill-test/issues",
@@ -34,20 +35,10 @@
     "grunt-ejs": "*",
     "grunt-gh-pages": "*",
     "jest": "^0.1.40",
+    "jest-cli": "^11.0.2",
     "matchdep": "*"
   },
   "dependencies": {
-    "debowerify": "^1.4.1",
-    "grunt": "^1.0.1",
-    "grunt-browserify": "^5.0.0",
-    "grunt-contrib-clean": "^1.0.0",
-    "grunt-contrib-concat": "^1.0.0",
-    "grunt-contrib-connect": "^1.0.1",
-    "grunt-contrib-copy": "^1.0.0",
-    "grunt-contrib-less": "^1.3.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-ejs": "^0.3.0",
-    "grunt-gh-pages": "^1.1.0",
-    "matchdep": "^1.0.1"
+    "flux": "^2.1.1"
   }
 }
