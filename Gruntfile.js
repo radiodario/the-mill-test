@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 
     browserify: {
       all: {
-        src: 'src/**/*.js',
+        src: 'src/app.js',
         dest: 'dist/app.js'
       },
       options: {
@@ -59,7 +59,7 @@ module.exports = function(grunt) {
       },
 
       js: {
-        files: '<%= browserify.all.src %>',
+        files: 'src/**/*.js',
         tasks: ['browserify'],
       },
 

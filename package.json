@@ -39,6 +39,11 @@
     "matchdep": "*"
   },
   "dependencies": {
-    "flux": "^2.1.1"
+    "flux": "^2.1.1",
+    "keymirror": "^0.1.1",
+    "moment": "^2.13.0",
+    "object-assign": "^4.0.1",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1"
   }
 }

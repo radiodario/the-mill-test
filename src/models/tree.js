@@ -1,9 +1,8 @@
-import trioToTree from '../utils/trioToTree';
-
+// the root is our singleton private instance
+// of our data
 const root = {
   children: {}
 };
-
 
 
 export default {

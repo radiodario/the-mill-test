@@ -1,25 +1,13 @@
 # the-mill-test
-> A test for the mill
+> A coding test for the mill
 
-## grunt-static-site usage:
-Initialize the git repository for the project:
 ```
-git init
-```
-
-Add and commit the files:
-```
-git add .
-git commit -m 'initial commit'
+npm install
+grunt start
+open 'http://localhost:3131'
 ```
 
-[Create a new repository on github](http://github.com/new)
-
-Make sure it has the same name you entered when you generated this project: the-mill-test
-
-Edit the project files to add your content.
-
-Deploy to GitHub Pages:
+## testing:
 ```
-grunt deploy
+npm test
 ```
