@@ -49,6 +49,21 @@ export default React.createClass({
   },
 
   areAllValid() {
+    const advertiser = this.state.advertiser;
+    if (!advertiser) {
+      this.setState({advertiserError: true});
+    }
+
+    const brand = this.state.brand;
+    if (!brand) {
+      this.setState({brandError: true});
+    }
+
+    const product = this.state.product;
+    if (!product) {
+      this.setState({productError: true});
+    }
+
     const advertiserValid = !this.state.advertiserError && this.state.advertiser.length;
     const brandValid = !this.state.brandError && this.state.brand.length;
     const productValid = !this.state.productError && this.state.brand.length;
@@ -70,9 +85,9 @@ export default React.createClass({
   },
 
   render() {
-    const advertiserValid = !this.state.hasOwnProperty('advertiserError') || !this.state.advertiserError
-    const brandValid = !this.state.hasOwnProperty('brandError') || !this.state.brandError
-    const productValid = !this.state.hasOwnProperty('productError') || !this.state.productError
+    const advertiserValid = !this.state.advertiserError;
+    const brandValid = !this.state.brandError;
+    const productValid = !this.state.productError;
 
     return (
       <form onSubmit={this.handleAdd}>
